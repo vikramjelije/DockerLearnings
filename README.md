@@ -4,65 +4,65 @@
 
  
 
-Docker ps -> list of running containers
+1. Docker ps -> list of running containers
 
-Docker ps -a -> list of all running and previously exited containers
+2. Docker ps -a -> list of all running and previously exited containers
 
-Docker stop containerName/containerID -> stops a container
+3. Docker stop containerName/containerID -> stops a container
 
-Docker rm containerName -> removes a stopped/ exited container
+4. Docker rm containerName -> removes a stopped/ exited container
 
-Docker images -> lists all downloaded images
+5. Docker images -> lists all downloaded images
 
-Docker rmi imageName -> deletes the downloaded image(We have to delete all dependent containers)
+6. Docker rmi imageName -> deletes the downloaded image(We have to delete all dependent containers)
 
-Docker exec containerName commandToExecute -> executes a command inside container
+7. Docker exec containerName commandToExecute -> executes a command inside container
 
-Docker attach containerID -> attaches the container logs to terminal
-
- 
+8. Docker attach containerID -> attaches the container logs to terminal
 
  
 
-Docker Run
+ 
+
+### Docker Run
 
  
 
-Docker run imageName:version
+Syntax: Docker run imageName:version
 
  
 
-Docker run - STDIN
+1. Docker run - STDIN
 
-Docker run -it imageName -> -I to read input from terminal and t to connect to sudo terminal inside container
-
- 
-
-Docker run - PORT mapping
-
-Docker run -p 80:80 imageName
+2. Docker run -it imageName -> -I to read input from terminal and t to connect to sudo terminal inside container
 
  
 
-Docker run VOLUME - mount
+3. Docker run - PORT mapping
 
-Docker run -v /opt/datadir:/var/lib/mysql mysql
+4. Docker run -p 80:80 imageName
 
  
 
-Inspect container
+5. Docker run VOLUME - mount
+
+6. Docker run -v /opt/datadir:/var/lib/mysql mysql
+
+ 
+
+### Inspect container
 
 Docker inspect containerName -> returns container data in JSON format
 
  
 
-Container Logs
+### Container Logs
 
 Docker logs containerName
 
  
 
-Environment Variables in Docker
+## Environment Variables in Docker
 
  
 
@@ -74,7 +74,7 @@ We can find the set environment variables for a running container using docker i
 
  
 
-Docker network types
+## Docker network types
 
  
 
@@ -88,7 +88,7 @@ Disadvanatge: we cannot run multiple containers with same port
 
  
 
-User-defined network
+### User-defined network
 
 Used to create isolated network for few specific networks. By default docker host creates only one docker bridge network.
 
@@ -113,8 +113,8 @@ Docker Volumes
 Command to create a volume: docker volume create data_volume
 
 Filestructure:
+![Volume File Structure](https://myoctocat.com/assets/images/base-octocat.svg)
 
-IlMyb4bjqkAAAAASUVORK5CYII=
 
  
 
