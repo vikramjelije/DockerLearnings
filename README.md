@@ -113,7 +113,7 @@ Docker Volumes
 Command to create a volume: docker volume create data_volume
 
 Filestructure:
-![Volume File Structure](https://myoctocat.com/assets/images/base-octocat.svg)
+![Volume File Structure](/image001.png)
 
 
  
